@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Verdana';
+    src: local('Verdana'),
+        url('Verdana.woff2') format('woff2'),
+        url('Verdana.woff') format('woff'),
+        url('Verdana.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Verdana-Bolt';
+    src: local('Verdana-Bolt'),
+        url('Verdana-Bold.woff2') format('woff2'),
+        url('Verdana-Bold.woff') format('woff'),
+        url('Verdana-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+.conteiner {
+    width: 1366px;
+    height: 768px;
+    margin: auto;
+    background-image: url(background.jpg);
+  }
+.header {
+    padding: 49px 147px 48px 155px;
+    display: grid;
+    grid-template-columns: 46px 105px 1fr;
+    grid-template-rows: 22px 22px;
+    font-family: 'Verdana-Bolt', sans-serif;
+    color: #fff;
+}
+.logo {
+  position: absolute;
+  right: 105px;
+  width: 46px;
+  height: 44px;
+  fill: #fff;
+  
+}
+.logo_text {
+  position: relative;
+    padding-left: 15px;
+    grid-column: 2/3;
+}
+.milan {
+    font-size: 29px;
+    line-height: 0.72;
+}
+.holiday {
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 1.17;
+}
+.logo_text:hover .logo, .logo_text:hover .milan, .logo_text:hover .holiday{
+  color: #f26522;
+  fill: #f26522;
+}
+.contact p {
+    grid-column: 3/3;
+    text-align: right;
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    padding-top: 3px;
+}
+.galery {
+  display: grid;
+  grid-template-columns: 311px 311px 311px;
+  grid-template-rows: 240px 240px;
+  grid-column-gap: 69px;
+  grid-row-gap: 58px;
+  margin-left: 157px;
+  
+}
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  opacity: 0.5;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-bottom: 1px;
+  }
+  .shopping {
+    position: relative;
+  }
+  .image {
+    display: block;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #d7eced 0%, #252627 100%);
+    border-image-slice: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 136px;
+    opacity:0;
+    background: #f26522;
+    width: 100%;
+    transition: .5s ease;
+    color: white;
+    font-family: 'Verdana', sans-serif;
+  }
+  .text {
+    padding: 12px 0 0 21px;
+    font-size: 10px;
+    line-height: 2.1;
+  }
+  .price {
+    padding: 0 0 13px 21px;
+    font-size: 20px;
+    line-height: 1.05;
+    display: inline-block;
+  }
+  .detail {
+    font-size: 14px;
+    line-height: 1.5;
+    display: inline;
+    padding: 0 10px 0 120px;
+  }
+  .text_card {
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #fff;
+    text-align: center;
+    margin-top: 22px;
+  }
+  .shopping:hover .overlay {
+    opacity: 1;
+  }
+  .shopping:hover .text_card {
+    color: #f26522;
+  }
+  .sightseeing {
+    position: relative;
+  }
+  .sightseeing:hover .overlay {
+    opacity: 1;
+  }
+  .sightseeing:hover .text_card {
+    color: #f26522;
+  }
+  .food {
+    position: relative;
+  }
+  .food:hover .overlay {
+    opacity: 1;
+  }
+  .food:hover .text_card {
+    color: #f26522;
+  }
+  .bars {
+    position: relative;
+  }
+  .bars:hover .overlay {
+    opacity: 1;
+  }
+  .bars:hover .text_card {
+    color: #f26522;
+  }
+  .art {
+    position: relative;
+  }
+  .art:hover .overlay {
+    opacity: 1;
+  }
+  .art:hover .text_card {
+    color: #f26522;
+  }
+  .walking {
+    position: relative;
+  }
+  .walking:hover .overlay {
+    opacity: 1;
+  }
+  .walking:hover .text_card {
+    color: #f26522;
+  }
+  .footer {
+  margin-top: 56px;
+  font-family: 'Verdana', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  }
